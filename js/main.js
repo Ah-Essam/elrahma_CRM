@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ===== set location & set user name in home ===== Done
     let user = JSON.parse(localStorage.getItem("userData"))
-    if (!user && !currentPage.includes("login.html")) {
-        window.location.href = "login.html"
-    }
-    if (user && currentPage.includes("login.html")) {
-        window.location.href = "index.html"
-    }
+    // if (!user && !currentPage.includes("login.html")) {
+    //     window.location.href = "login.html"
+    // }
+    // if (user && currentPage.includes("login.html")) {
+    //     window.location.href = "index.html"
+    // }
 
     // ===== login ===== Done
     if (currentPage.includes("login.html")) {
@@ -523,4 +523,5 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     }
+
 })
